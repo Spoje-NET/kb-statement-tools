@@ -1,33 +1,34 @@
 {
-    "name": "spojenet/raiffeisenbank-statement-tools",
-    "description": "raiffeisenbank bank statement tools",
+    "name": "spojenet/kb-statement-tools",
+    "description": "KB statement tools",
     "license": "MIT",
     "authors": [
         {
-            "name": "Vítězslav Dvořák",
-            "email": "info@vitexsoftware.cz"
+            "name": "Ladislav Vondráček",
+            "email": "lad.von@gmail.cz"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "bin": [
-        "src/raiffeisenbank-statement-downloader.php",
-        "src/raiffeisenbank-statement-mailer.php"
     ],
     "require": {
-        "vitexsoftware/rbczpremiumapi": "^1.3"
+        "php": "^8.1",
+        "spojenet/kb-accountsapi": "dev-main",
+        "lawondyss/parex": "dev-main",
+        "vitexsoftware/ease-core": "dev-main"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
         "phpstan/phpstan": "*",
         "friendsofphp/php-cs-fixer": "^3.65",
         "ergebnis/composer-normalize": "^2.43",
-        "ergebnis/php-cs-fixer-config": "^6.34"
+        "ergebnis/php-cs-fixer-config": "^6.34",
+        "tracy/tracy": "^3.0@dev",
+        "vitexsoftware/rbczpremiumapi": "^1.1"
     },
     "config": {
         "allow-plugins": {
             "ergebnis/composer-normalize": true
         }
     }
-
 }
-
