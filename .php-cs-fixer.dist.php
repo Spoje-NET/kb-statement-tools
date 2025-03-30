@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 /**
- * This file is part of the RaiffeisenBank Statement Tools package
+ * This file is part of the KB Statement Tools package
  *
- * https://github.com/Spoje-NET/pohoda-raiffeisenbank
+ * https://github.com/Spoje-NET/kb-statement-tools
  *
  * (c) Spoje.Net IT s.r.o. <https://spojenet.cz>
  *
@@ -18,9 +18,9 @@ use Ergebnis\PhpCsFixer\Config\Rules;
 use Ergebnis\PhpCsFixer\Config\RuleSet\Php81;
 
 $header = <<<'HEADER'
-This file is part of the RaiffeisenBank Statement Tools package
+This file is part of the KB Statement Tools package
 
-https://github.com/Spoje-NET/pohoda-raiffeisenbank
+https://github.com/Spoje-NET/kb-statement-tools
 
 (c) Spoje.Net IT s.r.o. <https://spojenet.cz>
 
