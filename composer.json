@@ -4,6 +4,10 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Vítězslav Dvořák",
+            "email": "info@vitexsoftware.cz"
+        },
+        {
             "name": "Ladislav Vondráček",
             "email": "lad.von@gmail.cz"
         }
@@ -23,8 +27,7 @@
         "friendsofphp/php-cs-fixer": "^3.65",
         "ergebnis/composer-normalize": "^2.43",
         "ergebnis/php-cs-fixer-config": "^6.34",
-        "tracy/tracy": "^3.0@dev",
-        "vitexsoftware/rbczpremiumapi": "^1.1"
+        "tracy/tracy": "^3.0@dev"
     },
     "config": {
         "allow-plugins": {
