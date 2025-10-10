@@ -1,0 +1,120 @@
+{
+    "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
+    "schemaVersion": "3.0.0",
+    "uuid": "34f326d7-35d6-4602-8299-4ce1e37342b9",
+    "name": {
+        "en": "KB statement downloader",
+        "cs": "KB statement downloader"
+    },
+    "description": {
+        "en": "Download kb statements in given format",
+        "cs": "Download kb statements in given format"
+    },
+    "tags": "kb,Statements,Downloader",
+    "homepage": "https://github.com/Spoje-NET/kb-statement-tools",
+    "image": "",
+    "ociimage": "",
+    "executable": "kb-statement-downloader",
+    "environment": {
+        "ACCOUNT_NUMBER": {
+            "type": "text",
+            "description": {
+                "en": "Bank Account Number",
+                "cs": "Bank Account Number"
+            },
+            "defval": "",
+            "required": true,
+            "category": "Other"
+        },
+        "CERT_PASS": {
+            "type": "password",
+            "description": {
+                "en": "Certificate password",
+                "cs": "Certificate password"
+            },
+            "defval": "",
+            "required": true,
+            "category": "Other"
+        },
+        "CERT_FILE": {
+            "type": "string",
+            "description": {
+                "en": "Path to RB Certificate file",
+                "cs": "Path to RB Certificate file"
+            },
+            "defval": "",
+            "required": true,
+            "category": "Other"
+        },
+        "IMPORT_SCOPE": {
+            "type": "text",
+            "description": {
+                "en": "Time scope of transactions downloaded",
+                "cs": "Time scope of transactions downloaded"
+            },
+            "defval": "auto",
+            "required": true,
+            "category": "Other"
+        },
+        "STATEMENTS_DIR": {
+            "type": "text",
+            "description": {
+                "en": "Time scope of transactions downloaded",
+                "cs": "Time scope of transactions downloaded"
+            },
+            "defval": "auto",
+            "required": true,
+            "category": "Other"
+        },
+        "STATEMENT_FORMAT": {
+            "type": "text",
+            "description": {
+                "en": "pdf or xml",
+                "cs": "pdf or xml"
+            },
+            "defval": "pdf",
+            "required": true,
+            "category": "Other"
+        },
+        "STATEMENT_LINE": {
+            "type": "text",
+            "description": {
+                "en": "Statement line can be MAIN or ADDITIONAL",
+                "cs": "Statement line can be MAIN or ADDITIONAL"
+            },
+            "defval": "MAIN",
+            "required": false,
+            "category": "Other"
+        },
+        "ACCOUNT_CURRENCY": {
+            "type": "text",
+            "description": {
+                "en": "for multicurrency accounts please specify one",
+                "cs": "for multicurrency accounts please specify one"
+            },
+            "defval": "CZK",
+            "required": false,
+            "category": "Other"
+        },
+        "XIBMCLIENTID": {
+            "type": "text",
+            "description": {
+                "en": "ClientID",
+                "cs": "ClientID"
+            },
+            "defval": "",
+            "required": true,
+            "category": "Other"
+        },
+        "EASE_LOGGER": {
+            "type": "string",
+            "description": {
+                "en": "write log messages using",
+                "cs": "write log messages using"
+            },
+            "defval": "console|syslog",
+            "required": false,
+            "category": "Behavior"
+        }
+    }
+}

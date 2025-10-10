@@ -1,0 +1,90 @@
+{
+    "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
+    "schemaVersion": "3.0.0",
+    "uuid": "78895cde-37d2-40b9-9728-a9311529e28e",
+    "name": {
+        "en": "KB Balance",
+        "cs": "KB Balance"
+    },
+    "description": {
+        "en": "kb Balance check",
+        "cs": "kb Balance check"
+    },
+    "tags": "kb,Balance,Check,Json",
+    "homepage": "https://github.com/Spoje-NET/kb-statement-tools",
+    "image": "",
+    "ociimage": "",
+    "executable": "kb-balance",
+    "environment": {
+        "ACCOUNT_NUMBER": {
+            "type": "text",
+            "description": {
+                "en": "Bank Account Number",
+                "cs": "Bank Account Number"
+            },
+            "defval": "",
+            "required": true,
+            "category": "Other"
+        },
+        "CERT_PASS": {
+            "type": "password",
+            "description": {
+                "en": "Certificate password",
+                "cs": "Certificate password"
+            },
+            "defval": "",
+            "required": true,
+            "category": "Other"
+        },
+        "CERT_FILE": {
+            "type": "string",
+            "description": {
+                "en": "Path to RB Certificate file",
+                "cs": "Path to RB Certificate file"
+            },
+            "defval": "",
+            "required": true,
+            "category": "Other"
+        },
+        "XIBMCLIENTID": {
+            "type": "text",
+            "description": {
+                "en": "ClientID",
+                "cs": "ClientID"
+            },
+            "defval": "",
+            "required": true,
+            "category": "Other"
+        },
+        "RESULT_FILE": {
+            "type": "string",
+            "description": {
+                "en": "write output json data to",
+                "cs": "write output json data to"
+            },
+            "defval": "account_balance_{ACCOUNT_NUMBER}.json",
+            "required": false,
+            "category": "Other"
+        },
+        "ZABBIX_KEY": {
+            "type": "string",
+            "description": {
+                "en": "Default name for Zabbix Item key name",
+                "cs": "Default name for Zabbix Item key name"
+            },
+            "defval": "Raiff-Balance-{ACCOUNT_NUMBER}",
+            "required": false,
+            "category": "Other"
+        },
+        "EASE_LOGGER": {
+            "type": "string",
+            "description": {
+                "en": "write log messages using",
+                "cs": "write log messages using"
+            },
+            "defval": "console|syslog",
+            "required": false,
+            "category": "Behavior"
+        }
+    }
+}
