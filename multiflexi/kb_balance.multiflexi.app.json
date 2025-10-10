@@ -12,8 +12,6 @@
     },
     "tags": "kb,Balance,Check,Json",
     "homepage": "https://github.com/Spoje-NET/kb-statement-tools",
-    "image": "",
-    "ociimage": "",
     "executable": "kb-balance",
     "environment": {
         "ACCOUNT_NUMBER": {

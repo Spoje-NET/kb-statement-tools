@@ -12,8 +12,6 @@
     },
     "tags": "kb,Mail,Statements",
     "homepage": "https://github.com/Spoje-NET/kb-statement-tools",
-    "image": "",
-    "ociimage": "",
     "executable": "kb-statement-mailer",
     "environment": {
         "ACCOUNT_NUMBER": {

@@ -12,8 +12,6 @@
     },
     "tags": "Bank,kb,Transactions,Check,Json,Report",
     "homepage": "https://github.com/Spoje-NET/kb-statement-tools",
-    "image": "",
-    "ociimage": "",
     "executable": "kb-transaction-report",
     "environment": {
         "ACCOUNT_NUMBER": {

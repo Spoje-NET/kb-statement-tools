@@ -12,8 +12,6 @@
     },
     "tags": "kb,Statements,Downloader",
     "homepage": "https://github.com/Spoje-NET/kb-statement-tools",
-    "image": "",
-    "ociimage": "",
     "executable": "kb-statement-downloader",
     "environment": {
         "ACCOUNT_NUMBER": {
