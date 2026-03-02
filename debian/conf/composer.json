@@ -1,6 +1,6 @@
 {
-  "name": "spojenet/raiffeisenbank-statement-tools",
-  "description": "raiffeisenbank  account statement tools",
+  "name": "spojenet/kb-statement-tools",
+  "description": "kb  account statement tools",
   "license": "MIT",
   "authors": [
     {
@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AbraFlexi\\RaiffeisenBank\\": "/usr/share/raiffeisenbank-statement-downloader/RaiffeisenBank/"
+      "AbraFlexi\\kb\\": "/usr/share/kb-statement-downloader/kb/"
     }
   },
   "repositories": [
@@ -24,7 +24,7 @@
     },
     {
       "type": "path",
-      "url": "/usr/share/php/Raiffeisenbank"
+      "url": "/usr/share/php/kb"
     },
     {
       "type": "path",

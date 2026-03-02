@@ -1,22 +1,22 @@
-Source: raiffeisenbank-statement-tools
+Source: kb-statement-tools
 Section: unknown
 Priority: optional
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Build-Depends: debhelper-compat (= 12)
 Standards-Version: 4.5.0
-Homepage: https://github.com/VitexSoftware/raiffeisenbank-statement-tools
+Homepage: https://github.com/VitexSoftware/kb-statement-tools
 
-Package: raiffeisenbank-statement-tools
+Package: kb-statement-tools
 Architecture: all
-Depends: ${misc:Depends}, php-vitexsoftware-rbczpremiumapi (>=1.2)
+Depends: ${misc:Depends}, php-spojenet-kb-accountsapi, 
 Suggests: multiflexi
-Replaces: raiffeisenbank-statement-downloader
+Replaces: kb-statement-downloader
 Description: Download your Raiffeisen Bank Statements
  Download statements to disk in requested format and within given time
 
-Package: multiflexi-raiffeisenbank-statement-tools
+Package: multiflexi-kb-statement-tools
 Architecture: all
-Replaces: multiflexi-raiffeisenbank-statement-downloader
-Depends: raiffeisenbank-statement-tools, multiflexi
+Replaces: multiflexi-kb-statement-downloader
+Depends: kb-statement-tools, multiflexi
 Description: Raiffeisen Bank statement tools to MultiFlexi
  Allow use of Raiffeisen Bank statement tools in MultiFlexi environment

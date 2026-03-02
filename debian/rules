@@ -10,10 +10,10 @@
 
 override_dh_install:
 	dh_install
-	sed -i -e 's/..\/vendor/\/var\/lib\/composer\/raiffeisenbank-statement-tools/g'   debian/raiffeisenbank-statement-tools/usr/lib/raiffeisenbank-statement-tools/*.php
-	sed -i -e 's/\.\.\/.env//g'  debian/raiffeisenbank-statement-tools/usr/lib/raiffeisenbank-statement-tools/*.php
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  debian/conf/composer.json |sponge debian/raiffeisenbank-statement-tools/usr/lib/raiffeisenbank-statement-tools/composer.json
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/rb_balance.multiflexi.app.json |sponge debian/multiflexi-raiffeisenbank-statement-tools/usr/lib/raiffeisenbank-statement-tools/multiflexi/rb_balance.multiflexi.app.json
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/rb_statement_downloader.multiflexi.app.json |sponge debian/multiflexi-raiffeisenbank-statement-tools/usr/lib/raiffeisenbank-statement-tools/multiflexi/rb_statement_downloader.multiflexi.app.json
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/rb_statement_mailer.multiflexi.app.json |sponge debian/multiflexi-raiffeisenbank-statement-tools/usr/lib/raiffeisenbank-statement-tools/multiflexi/rb_statement_mailer.multiflexi.app.json
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/rb_transaction_report.multiflexi.app.json |sponge debian/multiflexi-raiffeisenbank-statement-tools/usr/lib/raiffeisenbank-statement-tools/multiflexi/rb_transaction_report.multiflexi.app.json
+	sed -i -e 's/..\/vendor/\/var\/lib\/composer\/kb-statement-tools/g'   debian/kb-statement-tools/usr/lib/kb-statement-tools/*.php
+	sed -i -e 's/\.\.\/.env//g'  debian/kb-statement-tools/usr/lib/kb-statement-tools/*.php
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  debian/conf/composer.json |sponge debian/kb-statement-tools/usr/lib/kb-statement-tools/composer.json
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/rb_balance.multiflexi.app.json |sponge debian/multiflexi-kb-statement-tools/usr/lib/kb-statement-tools/multiflexi/rb_balance.multiflexi.app.json
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/rb_statement_downloader.multiflexi.app.json |sponge debian/multiflexi-kb-statement-tools/usr/lib/kb-statement-tools/multiflexi/rb_statement_downloader.multiflexi.app.json
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/rb_statement_mailer.multiflexi.app.json |sponge debian/multiflexi-kb-statement-tools/usr/lib/kb-statement-tools/multiflexi/rb_statement_mailer.multiflexi.app.json
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//'`'"'  multiflexi/rb_transaction_report.multiflexi.app.json |sponge debian/multiflexi-kb-statement-tools/usr/lib/kb-statement-tools/multiflexi/rb_transaction_report.multiflexi.app.json

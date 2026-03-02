@@ -1,49 +1,49 @@
-raiffeisenbank-statement-tools (1.3.1) UNRELEASED; urgency=medium
+kb-statement-tools (1.3.1) UNRELEASED; urgency=medium
 
   * 0 phpstan issues
 
  -- vitex <info@vitexsoftware.cz>  Sun, 01 Dec 2024 06:21:53 +0100
 
-raiffeisenbank-statement-tools (1.3.0) unstable; urgency=medium
+kb-statement-tools (1.3.0) unstable; urgency=medium
 
   * Exitcodes added
 
  -- vitex <info@vitexsoftware.cz>  Sun, 01 Dec 2024 06:21:50 +0100
 
-raiffeisenbank-statement-tools (1.2.2) unstable; urgency=medium
+kb-statement-tools (1.2.2) unstable; urgency=medium
 
   * Better Log for Balance checker
 
  -- vitex <info@vitexsoftware.cz>  Sat, 23 Nov 2024 00:52:18 +0100
 
-raiffeisenbank-statement-tools (1.2.1) unstable; urgency=medium
+kb-statement-tools (1.2.1) unstable; urgency=medium
 
   * svg fix
 
  -- vitex <info@vitexsoftware.cz>  Mon, 11 Nov 2024 00:26:59 +0100
 
-raiffeisenbank-statement-tools (1.2.0) unstable; urgency=medium
+kb-statement-tools (1.2.0) unstable; urgency=medium
 
   [ vitezslav.dvorak@spojenet.cz ]
   * strict types, report update
 
  -- vitex <info@vitexsoftware.cz>  Sun, 20 Oct 2024 17:49:58 +0200
 
-raiffeisenbank-statement-tools (1.1.0) unstable; urgency=medium
+kb-statement-tools (1.1.0) unstable; urgency=medium
 
   [ vitezslav.dvorak@spojenet.cz ]
   * Write reports to file if specified
 
  --  <vitezslav.dvorak@spojenet.cz>  Fri, 13 Sep 2024 13:33:35 +0200
 
-raiffeisenbank-statement-tools (1.0.1) unstable; urgency=medium
+kb-statement-tools (1.0.1) unstable; urgency=medium
 
   [ vitezslav.dvorak@spojenet.cz ]
   * launcher paths fixed
 
  --  <vitezslav.dvorak@spojenet.cz>  Tue, 27 Aug 2024 20:49:37 +0200
 
-raiffeisenbank-statement-tools (1.0.0) unstable; urgency=low
+kb-statement-tools (1.0.0) unstable; urgency=low
 
   [ Vítězslav Dvořák ]
   * Initial release.
