@@ -1,0 +1,7 @@
+debian/conf/composer.json       usr/lib/kb-statement-tools/
+src/*			        usr/lib/kb-statement-tools/
+#src/SpojeNet/*                 usr/lib/kb-statement-tools/SpojeNet/
+bin/*                           usr/bin/
+.env.example                    usr/share/doc/kb-statement-tools
+io.github.spoje_net.kb_statement_tools.metainfo.xml /usr/share/metainfo/
+kb-statement-downloader.svg            /usr/share/icons/hicolor/scalable/apps/

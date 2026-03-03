@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 /**
- * This file is part of the RaiffeisenBank Statement Tools package
+ * This file is part of the kb Statement Tools package
  *
- * https://github.com/Spoje-NET/pohoda-raiffeisenbank
+ * https://github.com/Spoje-NET/pohoda-kb
  *
  * (c) Spoje.Net IT s.r.o. <https://spojenet.cz>
  *
@@ -13,14 +13,14 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace SpojeNet\RaiffeisenBank;
+namespace SpojeNet\kb;
 
 use Ease\Shared;
-use VitexSoftware\Raiffeisenbank\ApiClient;
+use VitexSoftware\kb\ApiClient;
 
 require_once '../vendor/autoload.php';
 
-\define('APP_NAME', 'RaiffeisenBankBalance');
+\define('APP_NAME', 'kbBalance');
 
 /**
  * Get today's transactions list.
@@ -43,13 +43,13 @@ if (ApiClient::checkCertificatePresence(Shared::cfg('CERT_FILE')) === false) {
 
     $exitcode = 1;
 } else {
-    $apiInstance = new \VitexSoftware\Raiffeisenbank\PremiumAPI\GetAccountBalanceApi();
+    $apiInstance = new \VitexSoftware\kb\PremiumAPI\GetAccountBalanceApi();
     $xRequestId = (string) time();
 
     try {
         $balance = $apiInstance->getBalance($xRequestId, Shared::cfg('ACCOUNT_NUMBER'));
         $written = file_put_contents($destination, json_encode($balance, Shared::cfg('DEBUG') ? \JSON_PRETTY_PRINT : 0));
-    } catch (\VitexSoftware\Raiffeisenbank\ApiException $exc) {
+    } catch (\VitexSoftware\kb\ApiException $exc) {
         $report['mesage'] = $exc->getMessage();
 
         $exitcode = $exc->getCode();

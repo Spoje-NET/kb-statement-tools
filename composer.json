@@ -1,6 +1,6 @@
 {
-    "name": "spojenet/raiffeisenbank-statement-tools",
-    "description": "raiffeisenbank bank statement tools",
+    "name": "spojenet/kb-statement-tools",
+    "description": "kb bank statement tools",
     "license": "MIT",
     "authors": [
         {
@@ -10,8 +10,8 @@
     ],
     "minimum-stability": "stable",
     "bin": [
-        "src/raiffeisenbank-statement-downloader.php",
-        "src/raiffeisenbank-statement-mailer.php"
+        "src/kb-statement-downloader.php",
+        "src/kb-statement-mailer.php"
     ],
     "require": {
         "vitexsoftware/rbczpremiumapi": "^1.3"

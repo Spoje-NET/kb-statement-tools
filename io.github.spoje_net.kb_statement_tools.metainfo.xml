@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="console-application">
-  <id>io.github.spoje_net.raiffeisenbank_statement_tools</id>
+  <id>io.github.spoje_net.kb_statement_tools</id>
   
-  <name>Raiffeisenbank Statement Downloader</name>
+  <name>kb Statement Downloader</name>
   <summary> Download your Statements to directory </summary>
   
   <metadata_license>MIT</metadata_license>
@@ -14,15 +14,13 @@
     </p>
   </description>
   
-  <icon type="stock">raiffeisenbank-statement-downloader</icon>
-  
+  <icon type="stock">kb-statement-downloader</icon>
   <categories>
     <category>System</category>
     <category>Adult</category>
   </categories>
   
   <provides>
-    <binary>raiffeisenbank-statement-downloader</binary>
+    <binary>kb-statement-downloader</binary>
   </provides>
 </component>
-

@@ -1,50 +1,50 @@
-Raiffeisenbank Statement Tools
+kb Statement Tools
 ==============================
 
 A set of tools for downloading and subsequent operations with Raiffaissenbank bank statements
 
-[![View raiffeisenbank-statement-downloader on GitHub](https://img.shields.io/github/stars/Spoje-NET/raiffeisenbank-statement-downloader?color=232323&label=raiffeisenbank-statement-downloader&logo=github&labelColor=232323)](https://github.com/Spoje-NET/raiffeisenbank-statement-downloader) 
+[![View kb-statement-downloader on GitHub](https://img.shields.io/github/stars/Spoje-NET/kb-statement-downloader?color=232323&label=kb-statement-downloader&logo=github&labelColor=232323)](https://github.com/Spoje-NET/kb-statement-downloader) 
 [![Author Spoje-NET](https://img.shields.io/badge/Spoje-NET-b820f9?labelColor=b820f9&logo=githubsponsors&logoColor=fff)](https://github.com/Spoje-NET) ![Written in PHP](https://img.shields.io/static/v1?label=&message=PHP&color=777BB4&logo=php&logoColor=FFFFFF)
 
 
 Statement Downloader
 --------------------
 
-![raiffeisenbank-statement-downloader](raiffeisenbank-statement-downloader.svg?raw=true)
+![kb-statement-downloader](kb-statement-downloader.svg?raw=true)
 
 Download bank statements for the required period in the required format to the specified or current folder
 
 ```shell
-raiffeisenbank-statement-downloader [save/to/directory] [format] [path/to/.env]
+kb-statement-downloader [save/to/directory] [format] [path/to/.env]
 ```
 
 Example output when EASE_LOGGER=console
 
 ```
-12/01/2023 16:37:10 ⚙ ❲RaiffeisenBank Statement Downloader⦒123456789@VitexSoftware\Raiffeisenbank\Statementor❳ Request statements from 2023-11-30 to 2023-11-30
-12/01/2023 16:37:13 🌼 ❲RaiffeisenBank Statement Downloader⦒123@VitexSoftware\Raiffeisenbank\Statementor❳ 10_2023_123_3780381_CZK_2023-11-01.xml saved
-12/01/2023 16:37:13 ℹ ❲RaiffeisenBank Statement Downloader⦒123456789@VitexSoftware\Raiffeisenbank\Statementor❳ Download done. 1 of 1 saved
+12/01/2023 16:37:10 ⚙ ❲kb Statement Downloader⦒123456789@VitexSoftware\kb\Statementor❳ Request statements from 2023-11-30 to 2023-11-30
+12/01/2023 16:37:13 🌼 ❲kb Statement Downloader⦒123@VitexSoftware\kb\Statementor❳ 10_2023_123_3780381_CZK_2023-11-01.xml saved
+12/01/2023 16:37:13 ℹ ❲kb Statement Downloader⦒123456789@VitexSoftware\kb\Statementor❳ Download done. 1 of 1 saved
 
 ```
 
 Statement mailer
 ----------------
 
-![raiffeisenbank-statement-downloader](raiffeisenbank-statement-mailer.svg?raw=true)
+![kb-statement-downloader](kb-statement-mailer.svg?raw=true)
 
 Download bank statements for the required period in the required format and send it by email
 
 ```shell
-raiffeisenbank-statement-mailer <recipient@domain,[recipient1@domain,...]> [format] [path/to/.env]
+kb-statement-mailer <recipient@domain,[recipient1@domain,...]> [format] [path/to/.env]
 ```
 
 Balance Check
 -------------
 
-![raiffeisenbank-balance](raiffeisenbank-balance.svg?raw=true)
+![kb-balance](kb-balance.svg?raw=true)
 
 ```shell
-raiffeisenbank-balance [path/to/.env]
+kb-balance [path/to/.env]
 ```
 
 Example output:
@@ -113,10 +113,10 @@ Example output:
 Transaction Report
 ------------------
 
-![raiffeisenbank-transaction-report](raiffeisenbank-transaction-report.svg?raw=true)
+![kb-transaction-report](kb-transaction-report.svg?raw=true)
 
 ```shell
-raiffeisenbank-transaction-report --output="/tmp/transaction_report.json" [--environment="path/to/.env"]
+kb-transaction-report --output="/tmp/transaction_report.json" [--environment="path/to/.env"]
 ```
 (the default output is stdout)
 
@@ -126,7 +126,7 @@ Example output:
 
 ```json
 {
-    "source": "000000000@VitexSoftware\\Raiffeisenbank\\Statementor",
+    "source": "000000000@VitexSoftware\\kb\\Statementor",
     "account": "000000000",
     "in": {
         "2024-03-06T11:17:34": "2904",
@@ -271,7 +271,7 @@ Created using the library [php-rbczpremiumapi](https://github.com/VitexSoftware/
 MultiFlexi
 ----------
 
-**Raiffeisenbank Statement Downloader** is ready for run as [MultiFlexi](https://multiflexi.eu) application.
+**kb Statement Downloader** is ready for run as [MultiFlexi](https://multiflexi.eu) application.
 See the full list of ready-to-run applications within the MultiFlexi platform on the [application list page](https://www.multiflexi.eu/apps.php).
 
 [![MultiFlexi App](https://github.com/VitexSoftware/MultiFlexi/blob/main/doc/multiflexi-app.svg)](https://www.multiflexi.eu/apps.php)
@@ -286,7 +286,7 @@ sudo apt install lsb-release wget apt-transport-https bzip2
 wget -qO- https://repo.vitexsoftware.com/keyring.gpg | sudo tee /etc/apt/trusted.gpg.d/vitexsoftware.gpg
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/vitexsoftware.gpg]  https://repo.vitexsoftware.com  $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/vitexsoftware.list
 sudo apt update
-sudo apt install raiffeisenbank-statement-tools
+sudo apt install kb-statement-tools
 ```
 
 See Also

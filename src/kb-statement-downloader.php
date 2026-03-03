@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 /**
- * This file is part of the RaiffeisenBank Statement Tools package
+ * This file is part of the kb Statement Tools package
  *
- * https://github.com/Spoje-NET/pohoda-raiffeisenbank
+ * https://github.com/Spoje-NET/pohoda-kb
  *
  * (c) Spoje.Net IT s.r.o. <https://spojenet.cz>
  *
@@ -13,18 +13,18 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace SpojeNet\RaiffeisenBank;
+namespace SpojeNet\kb;
 
 use Ease\Shared;
-use VitexSoftware\Raiffeisenbank\ApiClient;
-use VitexSoftware\Raiffeisenbank\Statementor;
+use VitexSoftware\kb\ApiClient;
+use VitexSoftware\kb\Statementor;
 
 require_once '../vendor/autoload.php';
 
-\define('APP_NAME', 'RaiffeisenBank Statement Downloader');
+\define('APP_NAME', 'kb Statement Downloader');
 
 if (\array_key_exists(1, $argv) && $argv[1] === '-h') {
-    echo 'raiffeisenbank-statement-downloader [save/to/directory] [format] [path/to/.env]';
+    echo 'kb-statement-downloader [save/to/directory] [format] [path/to/.env]';
     echo "\n";
 
     exit;
@@ -49,7 +49,7 @@ try {
     $status = 'ok';
     $exitcode = 0;
     $statements = $engine->getStatements(Shared::cfg('ACCOUNT_CURRENCY', 'CZK'), Shared::cfg('STATEMENT_LINE', 'MAIN'));
-} catch (\VitexSoftware\Raiffeisenbank\ApiException $exc) {
+} catch (\VitexSoftware\kb\ApiException $exc) {
     $status = $exc->getCode().': error';
     $exitcode = (int) $exc->getCode();
 }
