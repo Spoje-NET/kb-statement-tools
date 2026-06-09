@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
-  "schemaVersion": "3.2.1",
+  "schemaVersion": "3.4.0",
   "uuid": "9500c6a9-4c46-49ec-8686-10d606853c0b",
   "name": {
     "en": "KB statement mailer",
@@ -13,6 +13,19 @@
   "tags": "kb,Mail,Statements",
   "homepage": "https://github.com/Spoje-NET/kb-statement-tools",
   "executable": "kb-statement-mailer",
+  "events": {
+    "consumes": {
+      "bank.statement.downloaded": {
+        "description": "A bank statement file was downloaded",
+        "format": "file"
+      }
+    },
+    "emits": {
+      "bank.statement.mailed": {
+        "description": "A bank statement was emailed"
+      }
+    }
+  },
   "environment": {
     "ACCOUNT_NUMBER": {
       "type": "string",

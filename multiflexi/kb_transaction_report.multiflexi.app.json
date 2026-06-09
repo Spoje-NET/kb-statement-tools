@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
-  "schemaVersion": "3.2.1",
+  "schemaVersion": "3.4.0",
   "uuid": "9c2aad6f-2293-448d-9c8b-bc62ffdd14c1",
   "name": {
     "en": "KB transaction report",
@@ -13,6 +13,19 @@
   "tags": "Bank,kb,Transactions,Check,Json,Report",
   "homepage": "https://github.com/Spoje-NET/kb-statement-tools",
   "executable": "kb-transaction-report",
+  "events": {
+    "consumes": {
+      "bank.statement.downloaded": {
+        "description": "A bank statement file was downloaded",
+        "format": "file"
+      }
+    },
+    "emits": {
+      "bank.transaction.reported": {
+        "description": "A bank transaction report was produced"
+      }
+    }
+  },
   "environment": {
     "ACCOUNT_NUMBER": {
       "type": "string",

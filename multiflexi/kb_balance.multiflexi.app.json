@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
-  "schemaVersion": "3.2.1",
+  "schemaVersion": "3.4.0",
   "uuid": "78895cde-37d2-40b9-9728-a9311529e28e",
   "name": {
     "en": "KB Balance",
@@ -13,6 +13,13 @@
   "tags": "kb,Balance,Check,Json",
   "homepage": "https://github.com/Spoje-NET/kb-statement-tools",
   "executable": "kb-balance",
+  "events": {
+    "emits": {
+      "bank.balance.checked": {
+        "description": "An account balance was retrieved"
+      }
+    }
+  },
   "environment": {
     "ACCOUNT_NUMBER": {
       "type": "string",

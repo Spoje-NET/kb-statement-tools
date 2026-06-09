@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/VitexSoftware/php-vitexsoftware-multiflexi-core/refs/heads/main/multiflexi.app.schema.json",
-  "schemaVersion": "3.2.1",
+  "schemaVersion": "3.4.0",
   "uuid": "34f326d7-35d6-4602-8299-4ce1e37342b9",
   "name": {
     "en": "KB statement downloader",
@@ -13,6 +13,13 @@
   "tags": "kb,Statements,Downloader",
   "homepage": "https://github.com/Spoje-NET/kb-statement-tools",
   "executable": "kb-statement-downloader",
+  "events": {
+    "emits": {
+      "bank.statement.downloaded": {
+        "description": "A bank statement file was downloaded"
+      }
+    }
+  },
   "environment": {
     "ACCOUNT_NUMBER": {
       "type": "string",
